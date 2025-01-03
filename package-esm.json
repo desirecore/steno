@@ -26,11 +26,11 @@
   "funding": "https://github.com/sponsors/typicode",
   "license": "MIT",
   "author": "Typicode <typicode@gmail.com>",
-  "type": "module",
-  "exports": "./lib/index.js",
+  "exports": "./commonjs/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/index.js",
+    "commonjs",
     "lib/index.d.ts"
   ],
   "scripts": {
@@ -45,6 +45,9 @@
     "esm2commonjs": "babel lib --out-dir commonjs"
   },
   "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@commitlint/prompt-cli": "^17.7.2",
